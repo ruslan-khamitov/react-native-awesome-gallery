@@ -826,7 +826,6 @@ const ResizableImage = React.memo(
             ref={pinch}
             simultaneousHandlers={[pan]}
             onGestureEvent={gestureHandler}
-            minPointers={2}
           >
             <Animated.View style={{ width, height }}>
               <TapGestureHandler

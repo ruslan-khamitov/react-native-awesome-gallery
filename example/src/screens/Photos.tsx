@@ -32,8 +32,9 @@ export const Photos = () => {
   const { params } = useRoute<RouteProp<NavParams, 'Photos'>>();
   const onIndexChange = useCallback(
     (index) => {
-     isFocused() && setParams({ index });
+      isFocused() && setParams({ index });
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [setParams]
   );
 
